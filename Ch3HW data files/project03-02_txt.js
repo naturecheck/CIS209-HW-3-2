@@ -29,8 +29,9 @@ let htmlCode = "";
 for (let i = 0; i < captions.length; i++) {
    htmlCode += `<figure>
       <img alt='' src='slide${i}.jpg' /> 
-      // I struggled to figure out how to integrate the i variable into the string before learning about backticks
       <figcaption>${captions[i]}</figcaption>
    </figure>`
+            // I struggled to figure out how to integrate the i variable into the string before learning about backticks
 }
 document.getElementById("gallery").innerHTML = htmlCode;
+
